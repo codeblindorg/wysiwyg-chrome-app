@@ -10,16 +10,17 @@
   <body>
     <div class="container">
       
-      <div id="wrapper" class="toggled">
+      <div id="wrapper" class="">
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
+            <ul class="sidebar-nav" id="file-tree">
               <li class="sidebar-brand">
                 <a href="#" id="brand">YSIWYG</a>
               </li>
-              <hr>
               <!-- file heirarchy should display here -->
+              <li id="file-actions-add-folder"><a><i class="fa fa-plus"></i> New Folder</a></li>
+              <li id="file-actions-add-file"><a><i class="fa fa-plus"></i> New File</a></li>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -28,10 +29,8 @@
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <h1>Simple WYSIWYG Builder</h1>
-                        
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Show Filetree</a>
+                    <div class="col-lg-12">                      
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><i class="fa fa-align-justify"></i> Menu</a>
                     </div>
                 </div>
             </div>
