@@ -4,29 +4,48 @@
     <title>Site Builder</title>
     <link rel="stylesheet" href="styles/bootstrap.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/simple-sidebar.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
   </head>
   <body>
     <div class="container">
       
-      <div class="row text-center">
-        <div class="col-xs-12">
-          
-          <h2>Site Builder</h2>
-          
-          <hr>
+      <div id="wrapper" class="toggled">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+              <li class="sidebar-brand">
+                <a href="#" id="brand">YSIWYG</a>
+              </li>
+              <hr>
+              <!-- file heirarchy should display here -->
+            </ul>
         </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-xs-12">
-          
-          New Site Here....
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Simple WYSIWYG Builder</h1>
+                        
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Show Filetree</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      
+        <!-- /#page-content-wrapper -->
+
     </div>
+    <!-- /#wrapper -->
+
     
     <script src="js/jQuery.js"></script>
-    <script src="js/options.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/builder.js"></script>
+      
+    </div>
   </body>
 </html>
