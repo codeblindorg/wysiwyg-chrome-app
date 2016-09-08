@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "WYSIWYG Chrome App",
+  "name": "WYSIWYG",
   "description": "This app will allow you to create a website using bootstrap framework which you can download as a zip file",
   "version": "2",
   "app": { "background": { "scripts": ["background.js"] } },
