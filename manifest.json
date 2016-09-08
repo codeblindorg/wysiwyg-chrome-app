@@ -2,17 +2,11 @@
   "manifest_version": 2,
 
   "name": "WYSIWYG Chrome App",
-  "description": "This extension will allow you to create a website using bootstrap framework",
-  "version": "1.0",
-
-  "browser_action": {
-   "default_icon": "images/icon.png",
-   "default_popup": "popup.html"
-  },
-  "icons":{ "16": "images/icon.png",
-           "48": "images/icon48.png",
-          "128": "images/icon128.png" },
+  "description": "This app will allow you to create a website using bootstrap framework which you can download as a zip file",
+  "version": "2",
+  "app": { "background": { "scripts": ["background.js"] } },
+  "icons":{ "16": "images/icon.png", "48": "images/icon48.png", "128": "images/icon128.png" },
   "permissions": [
-   "activeTab"
+    {"fileSystem": ["write", "retainEntries", "directory"]}
    ]
 }
